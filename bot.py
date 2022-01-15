@@ -31,13 +31,13 @@ async def cancel(event):
 #start
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("Hey [🤗](https://telegra.ph/file/97da0b711a6ba2f4f4482.jpg)\nWelcome🔥🥂\n━━━━━━━━━━━━━━━━━━━━\n┏━━━━━━━━━━━━━━━━━┓\n┣★I m Highly advanced Tag Member Bot.\n┣★I can tag  members in group as well as in Channel.\n┣★Need Help hit ☛ [★𝐎𝐀𝐍★](Https://t.me/OAN_Support)\n┗━━━━━━━━━━━━━━━━━┛\n━━━━━━━━━━━━━━━━━━━━",
+  await event.reply("Hey [🤗](https://telegra.ph/file/20d1d874ca88c223e9eb0.jpg)\nWelcome🔥🥂\n━━━━━━━━━━━━━━━━━━━━\n┏━━━━━━━━━━━━━━━━━┓\n┣★I m Highly advanced Tag Member Bot.\n┣★I can tag  members in group as well as in Channel.\n┣★Need Help hit ☛ [★Sriki★](Https://t.me/Srikanth_36)\n┗━━━━━━━━━━━━━━━━━┛\n━━━━━━━━━━━━━━━━━━━━",
                    buttons=(
-                      [Button.url('🔥ᴀᴅᴅ ᴛᴀɢ ᴍᴇᴍʙᴇʀ ᴛᴏ ɢʀᴏᴜᴩ🔥', 'http://t.me/Tag_member_bot?startgroup=true')],
-                      [Button.url('⚜ᴏᴡɴᴇʀ⚜', 'Https://t.me/ItsAttitudeking')],
-                      [Button.url('🛎ꜱᴜᴩᴩᴏʀᴛ', 'https://t.me/OAN_Support'),
+                      [Button.url('🔥ᴀᴅᴅ ᴛᴀɢ ᴍᴇᴍʙᴇʀ ᴛᴏ ɢʀᴏᴜᴩ🔥', 'http://t.me/Srikibots_Mention_Bot?startgroup=true')],
+                      [Button.url('⚜ᴏᴡɴᴇʀ⚜', 'Https://t.me/Srikanth_36')],
+                      [Button.url('🛎ꜱᴜᴩᴩᴏʀᴛ', 'https://t.me/Sriki_Support_chat'),
                       Button.url('ᴜᴩᴅᴀᴛᴇ🔊', 'https://t.me/Attitude_Network')],
-                     [Button.url('⚒ʀᴇᴩᴏ⚒', 'https://github.com/ItsAttitudeking/Tag_member')]
+                     [Button.url('⚒ʀᴇᴩᴏ⚒', 'https://github.com/Srikanth-336/Tag_member')]
                      ),
                     link_preview=False
                    )
@@ -45,12 +45,12 @@ async def start(event):
 #help
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**[🔥](https://te.legra.ph/file/8d6307fcac08120cb9380.jpg), ᴛᴀɢ ᴍᴇᴍʙᴇʀ ʙᴏᴛ'ꜱ ʜᴇʟᴩ ᴍᴇɴᴜ👑**\n\nCommand: /tag \n You can use this command with text you want to tell others. \n`Example: /tag Good morning!` \nYou can use this command as an answer. any message Bot will tag users to replied message"
+  helptext = "**[🔥](https://telegra.ph/file/20d1d874ca88c223e9eb0.jpg), ᴛᴀɢ ᴍᴇᴍʙᴇʀ ʙᴏᴛ'ꜱ ʜᴇʟᴩ ᴍᴇɴᴜ👑**\n\nCommand: /tag \n You can use this command with text you want to tell others. \n`Example: /tag Good morning!` \nYou can use this command as an answer. any message Bot will tag users to replied message"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('⚜ᴏᴡɴᴇʀ⚜', 'https://t.me/ItsAttitudeking'),
-                      Button.url('🛎ꜱᴜᴩᴩᴏʀᴛ', 'https://t.me/OAN_Support')]
-                      [Button.url('⚒ʀᴇᴩᴏ⚒', 'https://github.com/ItsAttitudeking/Tag_member')]
+                      [Button.url('⚜ᴏᴡɴᴇʀ⚜', 'https://t.me/Srikanth_36'),
+                      Button.url('🛎ꜱᴜᴩᴩᴏʀᴛ', 'https://t.me/Sriki_Support_chat')]
+                      [Button.url('⚒ʀᴇᴩᴏ⚒', 'https://github.com/Srikanth-336/Tag_member')]
                      ),
                     link_preview=False
                    )
@@ -70,7 +70,7 @@ async def mentionall(event):
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)
   if not event.sender_id in admins:
-    return await event.reply("Only Admin can use it [😌](https://telegra.ph/file/97da0b711a6ba2f4f4482.jpg).")
+    return await event.reply("Only Admin can use it [😌](https://telegra.ph/file/20d1d874ca88c223e9eb0.jpg).")
   
   if event.pattern_match.group(1):
     mode = "text_on_cmd"
@@ -93,7 +93,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
       if event.chat_id not in moment_worker:
-        await event.respond("Ok tagger stopped [🔇](https://telegra.ph/file/97da0b711a6ba2f4f4482.jpg)")
+        await event.respond("Ok tagger stopped [🔇](https://telegra.ph/file/20d1d874ca88c223e9eb0.jpg)")
         return
       if usrnum == 10:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
@@ -111,7 +111,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
       if event.chat_id not in moment_worker:
-        await event.reply("Ok tagger stopped [🔇](https://telegra.ph/file/97da0b711a6ba2f4f4482.jpg)")
+        await event.reply("Ok tagger stopped [🔇](https://telegra.ph/file/20d1d874ca88c223e9eb0.jpg)")
         return
       if usrnum == 10:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -122,5 +122,5 @@ async def mentionall(event):
 
 
 print("~~~~Started~~~~~")
-print("🔥🥂Need Help Dm @ItsAttitudeking")
+print("🔥🥂Need Help Dm @Srikanth_36")
 client.run_until_disconnected()
